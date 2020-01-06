@@ -1,0 +1,30 @@
+name: kvs
+version: "1.0"
+author: curryie <xiebei1108@outlook.com>
+about: kv store
+args:
+    - version:
+        short: V 
+        help: Print the version
+subcommands:
+    - set:
+        about: set value
+        args:
+            - KEY:
+                required: true
+                index: 1
+            - VALUE:
+                required: true
+                index: 2               
+    - get:
+        about: get value
+        args:
+            - KEY:
+                required: true
+                index: 1
+    - rm:
+        about: delete key value
+        args:
+            - KEY:
+                required: true
+                index: 1
